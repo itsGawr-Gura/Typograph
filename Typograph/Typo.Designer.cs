@@ -1,6 +1,6 @@
 ﻿namespace Typograph
 {
-    partial class Form1
+    partial class Typo
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Typo));
             this.unverified = new System.Windows.Forms.RichTextBox();
             this.verified = new System.Windows.Forms.RichTextBox();
             this.print = new System.Windows.Forms.Button();
@@ -66,7 +67,7 @@
             this.print.UseVisualStyleBackColor = true;
             this.print.Click += new System.EventHandler(this.print_Click);
             // 
-            // Form1
+            // Typo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -75,7 +76,8 @@
             this.Controls.Add(this.print);
             this.Controls.Add(this.verified);
             this.Controls.Add(this.unverified);
-            this.Name = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Typo";
             this.Text = "Типограф";
             this.ResumeLayout(false);
 
